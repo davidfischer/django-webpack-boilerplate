@@ -3,3 +3,6 @@ gunicorn==19.7.1
 pytz==2017.2
 six==1.10.0
 whitenoise==3.3.0
+
+# A helper library for Heroku database configurations
+dj-database-url==0.4.1
