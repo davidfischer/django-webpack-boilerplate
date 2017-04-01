@@ -1,0 +1,37 @@
+{
+  "name": "django-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code to start a new Django project with Webpack2",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "tether": "^1.4.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.2",
+    "expose-loader": "^0.7.3",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "uglifyjs-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --progress --colors",
+    "build-production": "NODE_ENV=production webpack --config webpack.config.js --progress --colors",
+    "watch": "webpack --config webpack.config.js --watch",
+    "heroku-postbuild": "NODE_ENV=production webpack --config webpack.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidfischer/django-webpack-boilerplate.git"
+  },
+  "author": "David Fischer",
+  "license": "MIT",
+  "homepage": "https://github.com/davidfischer/django-webpack-boilerplate#readme"
+}

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Django Webpack Boilerplate">
+    <meta name="author" content="David Fischer">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <link href="{% static 'app.css' %}" rel="stylesheet">
+  </head>
+
+  <body class="bg-faded pt-4">
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/davidfischer/django-webpack-boilerplate">
+                <span class="fa fa-github"></span>
+                <span> GitHub</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <h3 class="text-muted">Django Webpack Boilerplate</h3>
+      </div>
+
+      <div class="jumbotron mt-4 text-white bg-primary">
+        <h1 class="display-3">Webpack + Django</h1>
+        <p class="lead">Take advantage of Webpack's static asset packaging and pipeline for your Django project</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Technologies</h4>
+          <ul>
+            <li>Python 2.7 or 3.6</li>
+            <li>Django 1.11</li>
+            <li>Whitenoise</li>
+            <li>Webpack 2</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Advantages</h4>
+          <ul>
+            <li>SASS compilation</li>
+            <li>Front-end dependency management</li>
+            <li>JS and CSS minification</li>
+            <li>Caching improvements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container-fluid py-3">
+        <hr>
+        <a href="https://github.com/davidfischer/django-webpack-boilerplate" data-toggle="tooltip" data-placement="top" title="Get the code">
+          <span class="fa fa-github"></span>
+          <span> github</span>
+        </a>
+        <span class="text-muted"> &middot; </span>
+        <a href="https://twitter.com/djfische" data-toggle="tooltip" data-placement="top" title="Follow me on Twitter">
+          <span class="fa fa-twitter"></span>
+          <span> twitter</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="{% static 'app.js' %}"></script>
+  </body>
+</html>
