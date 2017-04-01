@@ -2,6 +2,9 @@
   "name": "django-webpack-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate code to start a new Django project with Webpack2",
+  "engines": {
+    "node": "6.9.4"
+  },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
