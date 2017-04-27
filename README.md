@@ -1,6 +1,6 @@
 # Django Webpack Boilerplate
 
-A sample Django project that uses Webpack to manage and bundle static assets.
+A sample Django project that uses Webpack to manage, bundle, and process static assets.
 
 
 ## Prerequisites

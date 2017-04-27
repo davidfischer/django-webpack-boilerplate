@@ -21,7 +21,15 @@ const JS_MINIFIER_OPTIONS = new webpack.optimize.UglifyJsPlugin({
 
 module.exports = {
   entry: {
+    // This is the entry point to the application
+    // This JavaScript file can import other files all of which will be processed
+    // by webpack
     app: './assets/src/app.js',
+  },
+  output: {
+    // This is where post-processed assets should be written
+    filename: '[name].js',
+    path: OUTPUT_DIR,
   },
   module: {
     rules: [{
@@ -51,10 +59,6 @@ module.exports = {
       test: /\.(png|gif|jpg|jpeg)$/,
       loader: 'file-loader?name=./img/[name].[ext]'
     }],
-  },
-  output: {
-    filename: '[name].js',
-    path: OUTPUT_DIR,
   },
   plugins: [
     EXTRACT_SASS_RULES,
